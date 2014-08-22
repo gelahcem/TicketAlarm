@@ -23,9 +23,12 @@ import android.widget.Toast;
 public class HandleXML {
 
    private String country = "county";
-   private String temperature = "temperature";
-   private String humidity = "humidity";
-   private String pressure = "pressure";
+   private String currency = "currency";
+   private String locale = "locale";
+   private String originplace = "originplace";
+   private String destinationplace = "destinationplace";
+   private String outbounddate = "outbounddate";
+   
    private String urlString = null;
    private XmlPullParserFactory xmlFactoryObject;
    public volatile boolean parsingComplete = true;
@@ -35,15 +38,21 @@ public class HandleXML {
    public String getCountry(){
       return country;
    }
-   public String getTemperature(){
-      return temperature;
+   public String getCurrency(){
+      return currency;
    }
-   public String getHumidity(){
-      return humidity;
+   public String getLocale(){
+      return locale;
    }
-   public String getPressure(){
-      return pressure;
+   public String getOriginplace(){
+      return originplace;
    }
+   public String getDestinationplace(){
+	      return destinationplace;
+	   }
+   public String getOutbounddate(){
+	      return outbounddate;
+	   }
 
    public void parseXMLAndStoreIt(XmlPullParser myParser) {
       int event;

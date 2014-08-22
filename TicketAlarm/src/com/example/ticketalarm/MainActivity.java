@@ -6,10 +6,17 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
 
+
+/*http://partners.api.skyscanner.net/apiservices/browsequotes/
+ * v1.0/{market}/{currency}/{locale}/{originPlace}/{destinationPlace}/
+ * {outboundPartialDate}/{inboundPartialDate}?apiKey={apiKey}
+ * */
+
 public class MainActivity extends Activity {
 
-   private String url1 = "http://api.openweathermap.org/data/2.5/weather?q=";
-   private String url2 = "&mode=xml";
+   private String url1 = "http://partners.api.skyscanner.net/apiservices/pricing/v1.0";
+   private String ApiKey = "prtl6749387986743898559646983194";
+   private String url2 = "?apiKey=";
    private EditText location,country,temperature,humidity,pressure;
    private HandleXML obj;
    @Override
